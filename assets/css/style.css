@@ -1,0 +1,172 @@
+/* assets/css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --sidebar-bg: #9E3A3A;
+    --sidebar-hover: #D55454;
+    --bg-content: #FCE8CF;
+    --card-bg: #FFFFFF;
+    --primary: #D55454;
+    --success: #47C97B;
+    --warning: #F8B84A;
+    --danger: #FF5E5E;
+    --info: #3B82F6;
+    --text-primary: #1F2937;
+    --text-secondary: #6B7280;
+    --text-light: #9CA3AF;
+    --border-color: #E5E7EB;
+    --border-radius: 20px;
+    --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-content);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button, input, select, textarea {
+    outline: none;
+    border: none;
+    font-family: inherit;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(158, 58, 58, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(158, 58, 58, 0.6);
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.flex { display: flex; }
+.align-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.flex-column { flex-direction: column; }
+.gap-10 { gap: 10px; }
+.gap-20 { gap: 20px; }
+
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+
+.shadow-sm { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); }
+.shadow-md { box-shadow: var(--shadow); }
+
+/* Buttons styling */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--sidebar-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(213, 84, 84, 0.3);
+}
+
+.btn-success {
+    background-color: var(--success);
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #38b269;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(71, 201, 123, 0.3);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #e54e4e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 94, 94, 0.3);
+}
+
+.btn-warning {
+    background-color: var(--warning);
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e3a339;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(248, 184, 74, 0.3);
+}
+
+.btn-secondary {
+    background-color: #E5E7EB;
+    color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+    background-color: #D1D5DB;
+    transform: translateY(-2px);
+}
+
+/* Badge styling */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge-success { background-color: rgba(71, 201, 123, 0.15); color: var(--success); }
+.badge-danger { background-color: rgba(255, 94, 94, 0.15); color: var(--danger); }
+.badge-warning { background-color: rgba(248, 184, 74, 0.15); color: var(--warning); }
+.badge-info { background-color: rgba(59, 130, 246, 0.15); color: var(--info); }
+.badge-secondary { background-color: rgba(107, 114, 120, 0.15); color: var(--text-secondary); }

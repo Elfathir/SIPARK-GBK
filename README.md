@@ -1,5 +1,5 @@
 # SIPARK-GBK
-IPARK-GBK adalah aplikasi web Sistem Informasi Parkir Kendaraan 
+SIPARK-GBK adalah aplikasi web Sistem Informasi Parkir Kendaraan 
 berbasis PHP dan PostgreSQL yang mendukung pengelolaan, yakni: 
 - Area parkir,
 - Kendaraan (motor & mobil),
